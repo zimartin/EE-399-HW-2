@@ -157,28 +157,87 @@ fig.suptitle("First 6 SVD Modes")
 ## Computational Results
 ### Part A
 
+The results of the computation of the correlation between the first 100 images is best shown in the plot below.
 
+![download](https://user-images.githubusercontent.com/129991497/232694211-07ba9999-053f-47b6-afbf-0ff4d93050eb.png "Fig 1. Plot of the Correlation between the first 100 images and their transposes")
 
 ### Part B
+```
+First Pair:
+Most: [88 88] Least: [64 64]
+Final Findings:
+Most: [86 88] Least: [54 64]
+```
+![download](https://user-images.githubusercontent.com/129991497/232695105-52398645-acd0-4d70-81df-8d7f2ae1ef09.png "Fig 2. Two Most Correlated Images")
 
-
+![download](https://user-images.githubusercontent.com/129991497/232695120-1e5611a7-d8dd-4874-9564-66a3dc89a716.png "Fig 3. Two Least Correlated Images")
 
 ### Part C
 
-
+![download](https://user-images.githubusercontent.com/129991497/232695342-26f259c5-e0b5-4af7-9fb1-db8301edbe4e.png "Fig 4. Correlation between 10 images in the sample set")
 
 ### Part D
 
-
+The first 6 eigenvectors with the lowest eigenvalues and their corresponding eigenvalues.
+```
+Eigenvalue: 234020.4548538858
+Eigenvector: [0.02384327 0.02576146 0.02728448 ... 0.02082937 0.0193902  0.0166019 ]
+Eigenvalue: 49038.31530059216
+Eigenvector: [ 0.04535378  0.04567536  0.04474528 ... -0.03737158 -0.03557383
+ -0.02965746]
+Eigenvalue: 8236.539897013148
+Eigenvector: [-0.05653196 -0.04709124 -0.0362807  ... -0.06455006 -0.06196898
+ -0.05241684]
+Eigenvalue: 6024.871457930157
+Eigenvector: [-0.04441826 -0.05057969 -0.05522219 ...  0.01006919  0.00355905
+ -0.00040934]
+Eigenvalue: 2051.496432691054
+Eigenvector: [-0.03378603 -0.01791442 -0.00462854 ...  0.06172201  0.05796353
+  0.05757412]
+Eigenvalue: 1901.079114823662
+Eigenvector: [0.02207542 0.03378819 0.04487476 ... 0.03025485 0.02850199 0.00941028]
+```
 
 ### Part E
 
-
+The first 6 principal component vectors of the SVD.
+```
+[[-0.02384327 -0.04535378 -0.05653196  0.04441826 -0.03378603  0.02207542]
+ [-0.02576146 -0.04567536 -0.04709124  0.05057969 -0.01791442  0.03378819]
+ [-0.02728448 -0.04474528 -0.0362807   0.05522219 -0.00462854  0.04487476]
+ ...
+ [-0.02082937  0.03737158 -0.06455006 -0.01006919  0.06172201  0.03025485]
+ [-0.0193902   0.03557383 -0.06196898 -0.00355905  0.05796353  0.02850199]
+ [-0.0166019   0.02965746 -0.05241684  0.00040934  0.05757412  0.00941028]]
+ ```
 
 ### Part F
 
+![download](https://user-images.githubusercontent.com/129991497/232695923-26c4e8b6-7fe6-47b7-b2ae-aab5d6270f51.png "Fig 5. Comparison of the First Eigenventor and the first SVD Mode")
 
+Numerical comparison of the First Eigenventor and the first SVD Mode.
+```
+v1:
+ [0.02384327 0.02576146 0.02728448 ... 0.02082937 0.0193902  0.0166019 ]
+u1:
+ [-0.02384327 -0.02576146 -0.02728448 ... -0.02082937 -0.0193902
+ -0.0166019 ]
+Norm of difference of their absolute values: 6.742051385122386e-16
+```
 
 ### Part G
+The variance of the first 6 SVD Modes.
+```
+Percentage of variance captured by each of the first 6 SVD modes:
+SVD Mode 1: 77.677% Var
+SVD Mode 2: 16.277% Var
+SVD Mode 3: 2.734% Var
+SVD Mode 4: 2.0% Var
+SVD Mode 5: 0.681% Var
+SVD Mode 6: 0.631% Var
+```
 
+![download](https://user-images.githubusercontent.com/129991497/232696261-4d515db1-decb-4b36-b28f-160af6cdef3e.png "Fig 6. Plots of the First 6 SVD Modes")
 
+## Summary and Conclusions
+Through variations of correlation matrices and SVDs, we were able to model the variations and the correlations of the images contained withing the yalefaces dataset.
